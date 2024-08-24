@@ -1,25 +1,25 @@
 source /data/secrets
-if [-z "${DB_HOST}" ]; then
+if [ -z "${DB_HOST}" ]; then
   echo DB_HOST is missing
   exit 1
 fi
 
-if [-z "${RDS_USER}" ]; then
+if [ -z "${RDS_USER}" ]; then
   echo RDS_USER is missing
   exit 1
 fi
 
-if [-z "${RDS_PASS}" ]; then
+if [ -z "${RDS_PASS}" ]; then
   echo RDS_PASS is missing
   exit 1
 fi
 
-if [-z "${COMPONENT}" ]; then
+if [ -z "${COMPONENT}" ]; then
   echo COMPONENT is missing
   exit 1
 fi
 
-if [-z "${PROJECT_NAME}" ]; then
+if [ -z "${PROJECT_NAME}" ]; then
   echo PROJECT_NAME is missing
   exit 1
 fi
